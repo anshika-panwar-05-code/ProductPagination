@@ -82,7 +82,7 @@ const Home = () => {
   const fetchProducts = async () => {
     try {
       const res = await API.get(
-        `/products?page=${page}&limit=5&sort=${sortField}&order=${sortOrder}`
+        `/products?page=${page}&limit=8&sort=${sortField}&order=${sortOrder}`
       );
       setProducts(res.data.product);
       setTotalPages(res.data.totalPages);
