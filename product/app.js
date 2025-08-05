@@ -13,7 +13,10 @@ connectDB();
 
 
 app.use(express.json())
-app.use(cors());
+app.use(cors({
+  origin: "https://productpagination-1.onrender.com"
+}));
+
 
 
 app.use('/api',ProductRoutes)
